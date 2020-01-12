@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<response>
+  <data>
+    <categories>
+      <category>
+        <id>1</id>
+        <name>one</name>
+      </category>
+      <category>
+        <id>2</id>
+        <name>two</name>
+      </category>
+      <category>
+        <id>3</id>
+        <name>three</name>
+      </category>
+    </categories>
+  </data>
+</response>

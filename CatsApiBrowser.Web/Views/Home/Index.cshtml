@@ -1,0 +1,45 @@
+﻿@model IEnumerable<CatsApiBrowser.Data.Models.CategoryModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-sm-6">
+        <h2>Categories</h2>
+        <table class="table">
+            @foreach (var item in Model)
+            {
+                var getImagesActionLink = Url.Action("GetImages", "Home", new { category = item.Name });
+                <tr>
+                    <td>
+                        <div class="category" data-url="@getImagesActionLink">@item.Name.ToUpper()</div>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="col-sm-6">
+        <h2>Images</h2>
+        <div id="images-container"></div>
+    </div>
+</div>
+
+
+<script>
+
+    $("[data-url]").on("click", function () {
+
+        $.ajax({
+            url: $(this).data().url,
+            success: function (data) {
+                $("#images-container").html(data);
+            },
+            errro: function (err) {
+                alert(err)
+            }
+        });
+
+    });
+
+</script>

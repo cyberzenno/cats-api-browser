@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CatsApiBrowser.Data.Models.ImageModel>
+@{
+    Layout = null;
+}
+
+@foreach (var item in Model)
+{
+    <div class="single-image">
+        <img src="@item.Url" />
+    </div>
+}
+

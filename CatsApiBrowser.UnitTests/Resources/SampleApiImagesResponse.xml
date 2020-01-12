@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<response>
+  <data>
+    <images>
+      <image>
+        <url>foo</url>
+        <id>1</id>
+        <source_url>foo_source</source_url>
+      </image>
+    </images>
+  </data>
+</response>
