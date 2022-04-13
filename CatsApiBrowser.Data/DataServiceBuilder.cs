@@ -8,7 +8,7 @@ namespace CatsApiBrowser.Data
         public static IDataService CreateDataService()
         {
             var api = new ApiWrapper();
-            var parser = new XmlApiResponseParser();
+            var parser = new JsonApiResponseParser();
             var ds = new DataService(api, parser);
             return ds;
         }

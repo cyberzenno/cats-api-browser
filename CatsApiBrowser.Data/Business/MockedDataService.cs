@@ -22,14 +22,14 @@ namespace CatsApiBrowser.Data.Business
         {
             var small = new List<ImageModel>()
             {
-                new ImageModel(){Id = "1",Url="http://placehold.it/300x300",SourceUrl=""},
-                new ImageModel(){Id = "2",Url="http://placehold.it/300x300",SourceUrl=""}
+                new ImageModel(){Id = "1",Url="https://via.placeholder.com/300x300",SourceUrl=""},
+                new ImageModel(){Id = "2",Url="https://via.placeholder.com/300x300",SourceUrl=""}
             };
 
             var big = new List<ImageModel>()
             {
-                new ImageModel(){Id = "1",Url="http://placehold.it/600x600",SourceUrl=""},
-                new ImageModel(){Id = "2",Url="http://placehold.it/600x600",SourceUrl=""}
+                new ImageModel(){Id = "1",Url="https://via.placeholder.com/600x600",SourceUrl=""},
+                new ImageModel(){Id = "2",Url="https://via.placeholder.com/600x600",SourceUrl=""}
             };
 
             return category == "small" ? small : big;

@@ -40,7 +40,7 @@ namespace CatsApiBrowser.Data.Business
         //TODO: think a bit better about IDataService interface
         public IEnumerable<ImageModel> GetImages(string category)
         {
-            return GetImages("xml", "10", category);
+            return GetImages("json", "5", category);
         }
     }
 }

@@ -8,13 +8,13 @@ namespace CatsApiBrowser.Data.Business
         public string GetCategoriesList()
         {
             var client = new WebClient();
-            var content = client.DownloadString("http://thecatapi.com/api/categories/list");
+            var content = client.DownloadString("https://api.thecatapi.com/v1/categories");
             return content;
         }
 
         public string GetImages(string format, string resultsPerPage, string category)
         {
-            var url = "http://thecatapi.com/api/images/get?format=" + format + "&results_per_page=" + resultsPerPage + "&category=" + category;
+            var url = "https://api.thecatapi.com/api/images/get?format=" + format + "&results_per_page=" + resultsPerPage + "&category=" + category;
             var client = new WebClient();
             var content = client.DownloadString(url);
             return content;
